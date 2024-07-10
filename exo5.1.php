@@ -9,4 +9,4 @@ function moyenne2($notes){
 }
 
 echo  moyenne(10,11,13);
- //moyenne([10,11,13]);
+ // moyenne([10,11,13]);
