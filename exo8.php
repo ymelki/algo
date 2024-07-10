@@ -53,3 +53,11 @@ function array_sum_clone($notes){
 }
 
 echo "<hr>". array_sum_clone([10,10]);
+$tab_test[0]=15;
+$tab_test[1]=12;
+$tab_test[3]=15;
+var_dump($tab_test);
+echo "<hr>". array_sum_clone($tab_test);
+
+$personne["nom"]="Melki";
+$personne["yoel"]="Yoel";
