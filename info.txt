@@ -1,0 +1,15 @@
+1.Afficher Hello world Suivi d'un select
+2.Créez les variables 
+ nom , prenom , age , futurAge(age+10)
+ puis les afficher
+3.Créz une variable age.
+Puuis vérifier si la variable > 30
+Si oui afficher : je suis vieux ! laisse tomber
+Si non ca va détente !
+4. Afficher les tables de multiplication
+5. Creez 3  variables contenant des notes et calcule la moyenne
+   Pareil pour N variables avec un tableau
+7. Créez une fonction somme permettant de calcule la somme de 3 notes
+8. Pareil avec un tableau
+9. Créez un tableau  contenant un produit et l'afficher
+10 .Pareil pour plusieurs produits
