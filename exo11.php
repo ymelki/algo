@@ -25,7 +25,7 @@ echo "</pre>";
 foreach ($books as $book){
     ?>
     <hr>
-    ID : 
+    ID : <?=$book["id"]?>
     NOM : <a href="exo13.php?id=<?=$book["id"]?>"> <?=$book["name"]?> </a>
     CAT : <?=$book["category_id"]?>
     PRIX : <?=$book["price"]?> 
