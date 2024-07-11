@@ -52,6 +52,15 @@ function array_sum_clone($notes){
     return $somme;
 }
 
+function array_sum_clone2($notes){
+    $somme=0;
+    foreach ($notes as $key=>$value) {
+        $somme=$somme+$value;
+        echo "indice :". $key. "info : ".$somme. " ";
+    }
+    return $somme;
+}
+
 echo "<hr>". array_sum_clone([10,10]);
 $tab_test[0]=15;
 $tab_test[1]=12;
@@ -61,3 +70,9 @@ echo "<hr>". array_sum_clone($tab_test);
 
 $personne["nom"]="Melki";
 $personne["yoel"]="Yoel";
+
+echo "<hr>". array_sum_clone2($tab_test);
+
+
+
+
