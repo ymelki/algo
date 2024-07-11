@@ -30,7 +30,6 @@ foreach ($books as $book){
     CAT : <?=$book["category_id"]?>
     PRIX : <?=$book["price"]?> 
     <?php
-
 }
 // afficher une liste de produits
 /*$produits = [

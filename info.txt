@@ -13,3 +13,6 @@ Si non ca va détente !
 8. Pareil avec un tableau
 9. Créez un tableau  contenant un produit et l'afficher
 10 .Pareil pour plusieurs produits
+11. afficher tous les livres issue de la B.d
+12. pareil pour un seul livre le n°3
+13. pareil pour un seul livre issue de l'URL
