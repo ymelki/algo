@@ -1,3 +1,5 @@
+
+
 <?php
 
 // B.D. déjà créé avec la table book déjà créé.
@@ -58,3 +60,6 @@ foreach ($books as $book){
 */
 
 
+?>
+<br>
+<h1><a href="newbook.php">Créer livre</a></h1>
