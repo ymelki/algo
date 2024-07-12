@@ -29,6 +29,7 @@ foreach ($books as $book){
     NOM : <a href="exo13.php?id=<?=$book["id"]?>"> <?=$book["name"]?> </a>
     CAT : <?=$book["category_id"]?>
     PRIX : <?=$book["price"]?> 
+    <a href="supprimebook.php?id=<?=$book["id"]?>">SUPPRIME</a>
     <?php
 }
 // afficher une liste de produits
