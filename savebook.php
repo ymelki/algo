@@ -13,11 +13,18 @@ $pdo = new \PDO('mysql:host=localhost;dbname=dblibrary', 'root', 'Decembre2020!'
 
 
 // 2. requete select * from books
+// $query = "INSERT INTO book (name, category_id, price) 
+//          VALUES ('$name', '$category', '$price');";
+
 $query = "INSERT INTO book (name, category_id, price) 
-          VALUES ('$name', '$category', '$price');";
+          VALUES (:name_protege, :category_protege, :price_protege);";
 
 // pdo qui fait une requete
-$pdo->exec($query);
+//$pdo->exec($query);
+$statement->bindValue(':name_protege', $name, \PDO::PARAM_STR);
+$statement->bindValue(':category_protege', $category, \PDO::PARAM_STR);
+$statement->bindValue(':price_protege', $price, \PDO::PARAM_STR);
 
+$statement->execute();
 // redirection
 header("location:exo11.php");
