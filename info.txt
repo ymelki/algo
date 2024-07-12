@@ -16,3 +16,26 @@ Si non ca va détente !
 11. afficher tous les livres issue de la B.d
 12. pareil pour un seul livre le n°3
 13. pareil pour un seul livre issue de l'URL
+-------------------
+AVANT : 
+
+
+$id=$_GET['id'];
+
+// 2. requete select * from books
+$query = "SELECT * FROM book where id = $id";
+
+// pdo qui fait une requete
+$statement = $pdo->query($query);
+
+APRES (SECURISE) : 
+$id=$_GET['id'];
+
+// 2. requete select * from books
+$query = "SELECT * FROM book where id = :id_protege";
+$statement =$pdo->prepare($query);
+$statement->bindValue(":id_protege",$id,\PDO::PARAM_INT);
+
+$statement->execute();
+$books=$statement->fetchAll();
+
