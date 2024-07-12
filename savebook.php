@@ -21,6 +21,7 @@ $query = "INSERT INTO book (name, category_id, price)
 
 // pdo qui fait une requete
 //$pdo->exec($query);
+$statement=$pdo->prepare($query);
 $statement->bindValue(':name_protege', $name, \PDO::PARAM_STR);
 $statement->bindValue(':category_protege', $category, \PDO::PARAM_STR);
 $statement->bindValue(':price_protege', $price, \PDO::PARAM_STR);
