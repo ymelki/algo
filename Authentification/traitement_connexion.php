@@ -45,6 +45,7 @@ else {
     // mail saisie avec le mail de la B.D. qui est dans la variable $user['password']
      if ( $password == $user['password'] ) {
         echo "ok tu es bien connecté ! ";
+        // créé la session et la tester sur d'autres pages
      }
      else  {
         // mot de passe faux
